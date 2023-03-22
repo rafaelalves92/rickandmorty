@@ -1,7 +1,7 @@
 .main-header {
   display: flex;
   justify-content: center;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   border-bottom: 1px solid #bcdfff;
   box-shadow: 0 2px 2px 0 #bcdfff;
   width: 100%;
@@ -36,7 +36,7 @@
       button {
         height: 100%;
         padding: 0 15px;
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         border: none;
         border-radius: 1px;
         font-weight: 500;
@@ -72,6 +72,8 @@
     display: none;
   }
 
+  position: absolute;
+  z-index: 1;
   width: 100%;
   border-top: 1px solid #bcdfff;
   border-bottom: 1px solid #bcdfff;
@@ -81,7 +83,7 @@
     width: 100%;
     padding: 25px 0;
     border: none;
-    background-color: #f6f6f6;
+    background-color: #ffffff;
     color: #696969;
   }
   button:hover {
