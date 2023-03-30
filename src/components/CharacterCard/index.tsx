@@ -1,31 +1,41 @@
-import { useState } from "react";
-import Rick from "../../assets/rick.jpeg";
+import { ICharacter } from "../../interfaces/character.interface";
 import "./styles.scss";
 
-const CharacterCard = () => {
+const CharacterCard = (char: ICharacter) => {
   return (
     <div className="main-card">
       <div className="img-div">
-        <img src={Rick} />
+        <img src={char.image} />
       </div>
       <div className="text-div">
-        <p>
-          Name: <span>Rick Sanchez</span>
+        <p className="name">
+          Name: <span>{char.name}</span>
         </p>
         <p>
-          Status: <span className="green">Alive</span>
+          Status:{" "}
+          <span
+            className={
+              char.status == "Alive"
+                ? "green"
+                : char.status == "Dead"
+                ? "red"
+                : undefined
+            }
+          >
+            {char.status}
+          </span>
         </p>
         <p>
-          Species: <span>Human</span>
+          Species: <span>{char.species}</span>
         </p>
         <p>
-          Gender: <span>Male</span>
+          Gender: <span>{char.gender}</span>
         </p>
         <p>
-          Origin: <span>Earth (C-137)</span>
+          Origin: <span>{char.origin.name}</span>
         </p>
         <p>
-          Location: <span>Citadel of Ricks</span>
+          Location: <span>{char.location.name}</span>
         </p>
       </div>
     </div>

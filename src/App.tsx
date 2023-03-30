@@ -1,11 +1,9 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Character from "./pages/Character";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <Character />
     </div>
   );
 }
