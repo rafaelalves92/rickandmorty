@@ -1,0 +1,57 @@
+.main-card {
+  margin: 25px 10px;
+  padding: 15px;
+
+  width: 360px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  border: 1px solid #bcdfff;
+  box-shadow: 0 0 5px 0px #bcdfff;
+
+  display: flex;
+  gap: 10px;
+
+  position: relative;
+
+  .img-div {
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    width: 100px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 0 black;
+    }
+  }
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .name {
+      max-width: 210px;
+      height: 22px;
+      overflow-x: auto;
+    }
+
+    p {
+      color: #696969;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.green {
+  color: rgb(0, 218, 0);
+}
+
+.red {
+  color: red;
+}
